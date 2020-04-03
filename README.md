@@ -1,4 +1,7 @@
 # OPE
+
+![OPE logo](logo-ope-reserve.png)
+
 ## One Page for Equity
 
 This projects aims to create a dashboard with variety of gender based information and visualisation.
@@ -12,4 +15,4 @@ According to law french companies now are required to measure and publish inform
 
 ## How to use OPE
 
-Upload your `.csv` file et voila! 
+Upload your `.csv` file et voila!
