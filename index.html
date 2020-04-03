@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link href="css/ope.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<div class="welcome">
+	<img src="img/logo-ope-reserve.svg" width="240" height="104" alt="Logo OPE">
+	<p>{tool presentation}</p>
+	<div class="upload">
+		<div class="initial" id="initial">
+			<div class="fake-button">
+				<input type="file" accept=".csv" onchange="handleFiles(this.files)">
+				Upload your file
+			</div>
+			<p class="download_template"><a href="templates/template_file.csv">Or download *.csv template</a></p>
+		</div>
+		<div class="loader hidden" id="loader">
+			<img src="img/loader.svg" width="160" height="160">
+			<p>Please wait while your file is being processed. This should take less than 20 seconds.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
