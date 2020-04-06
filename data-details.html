@@ -1,0 +1,78 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="css/ope.css" rel="stylesheet">
+  <link href="css/mdc_icons.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script type="text/javascript" src="js/ope.js"></script>
+</head>
+<body>
+<div class="dashboard">
+	<a href="index.html"><img class="logo" src="img/logo-ope-reserve.svg" alt="Logo OPE"></a>
+	<div class="details">
+		<div class="mdc-card">
+
+			<h2>{indicator title}<a href="dashboard.html" class="mdc-icon-button material-icons">close</a></h2>
+			<div class="filters">
+					<div>
+						<label>Label filter 1<br/>
+							<select>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label>Label filter 2<br/>
+							<select>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label>Label filter 3<br/>
+							<select>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<label>Label filter 4<br/>
+							<select>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</label>
+					</div>
+					<div>
+						<button>Apply filters</button>
+					</div>
+				</div>			
+			<div class="dataviz">
+				<canvas id="gender_distribution" ></canvas><a class="mdc-icon-button material-icons toggle_filters">filter_list</a>
+
+			</div>
+			<div class="indicator-description">
+				<h3>Quelle est la répartition des promotions entre les hommes et les femmes ?</h3>
+				<p>La loi Egalité du 4 août 2014 a modifié le code du travail et prévoit dans l'article L 2323-47 du RSE et L 2323-57 du RSC que le rapport analyse les écarts de salaires et de déroulement de carrière des femmes et des hommes en fonction de leur âge, de leur qualification et de leur ancienneté et décrive l’évolution des taux de promotion respectifs des femmes et des hommes par métiers dans l’entreprise. Les tableaux et graphiques ci-dessous ainsi que les  menus de tris complémentaires permettent de réaliser cette analyse entre autres par Catégorie, Métier, tranche d'Age ou d'Ancienneté. </p>
+			</div>
+
+		</div>
+
+		
+	</div>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+</body>
+</html>
