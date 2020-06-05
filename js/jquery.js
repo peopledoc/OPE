@@ -1,3 +1,4 @@
+/* eslint-disable */
 hide_filters = function() {
 	$(".filters").slideUp();
 	$(".toggle_filters").show();

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 function handleFiles(fileList) {
     const reader = new FileReader()
     myFile = fileList[0];
@@ -28,13 +30,12 @@ function analyseData(data) {
       valid_lines.push(line)
     }
 
-    // TODO store data in local storage
+    // store data in local storage
     myStorage = window.localStorage;
     myStorage.setItem('lines', JSON.stringify(valid_lines))
     myStorage.setItem('headers', JSON.stringify(headers))
 
-    // TODO change page
+    // change page
     document.location.href = 'dashboard.html'
 
-    //display_gender_chart(valid_lines);
 }
