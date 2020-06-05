@@ -3,4 +3,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   lines = storage.getItem('lines')
   lines = JSON.parse(lines)
   display_gender_chart(lines, 'gender_distribution');
+  display_type_of_contract(lines, 'type_of_contracts');
 })
