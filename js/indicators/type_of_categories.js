@@ -21,20 +21,27 @@ function display_type_of_categories(lines, elementId) {
         }
     }
 
+    const ordered_categories_f = {};
+    const ordered_categories_h = {};
+    Object.keys(categories_f).sort().forEach(function(key) {
+      ordered_categories_f[key] = categories_f[key];
+      ordered_categories_h[key] = categories_h[key];
+    });
+
     let dataset = [
     { 
         label : 'Femmes',
-        data : Object.values(categories_f),
+        data : Object.values(ordered_categories_f),
         backgroundColor: '#0D533D'
     },
     {
         label : 'Hommes',
-        data : Object.values(categories_h),
+        data : Object.values(ordered_categories_h),
         backgroundColor: '#58BBA6'
     }
     ]
 
-    let categories_label = Object.keys(categories_f);
+    let categories_label = Object.keys(ordered_categories_f);
 
     const ctx = document.getElementById(elementId).getContext('2d');
     new Chart(ctx, {
@@ -45,6 +52,9 @@ function display_type_of_categories(lines, elementId) {
         },
         options: {
             scales: {
+                xAxes: [{
+                    stacked: true
+                }],
                 yAxes: [{
                     stacked: true
                 }]
