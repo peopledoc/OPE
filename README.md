@@ -16,3 +16,15 @@ According to law, French companies now are required to measure and publish infor
 ## How to use OPE
 
 Upload your `.csv` file et voila!
+
+## How to contrubute
+
+We'd love to see your contribution. Follow the insturction below to run project locally and make a PR if you have an idea for the project. Contact us if you have any questions
+
+### Running a project
+
+* `git clone git@github.com:peopledoc/OPE.git` this repository
+* `cd OPE`
+* `yarn`
+
+Check linting by running `yarn lint:js`
